@@ -35,7 +35,7 @@ header{
 .header2{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .header22 a{
@@ -199,7 +199,7 @@ header{
     
 }
 
-.service2{
+.service11{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -308,7 +308,7 @@ header{
     display: flex;
     flex-direction: row;
     font-size: 2rem;
-    padding: 20px;
+    padding: 20px 0;
     font-weight: 600;
     gap: 10px;
 }
@@ -319,7 +319,7 @@ header{
     gap: 10px;
 }
 
-.form1 input[type="tel"], .form1 input[type="email"], .form1 input[type="text"] {
+.form1 input {
     width: 700px;
     height: 30px;
     background-color: black;
@@ -362,4 +362,101 @@ footer{
     align-items: center;
     gap: 10px;
     padding: 20px;
+}
+
+@media screen and (max-width: 720px){
+    .mainsec{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .header2{
+        gap: 10px;
+        font-weight: 700;
+    }
+
+    .hero{
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .hero-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .hero2 img{
+        height: auto;
+        box-shadow: none;
+    }
+
+    .about-me{
+        width: 85%;
+        height: auto;
+        padding: 20px 0;
+        gap: 5px;
+    }
+    .about-me2{
+        width: 40%;
+        height: auto;
+    }
+    .about-me2  img{
+        box-shadow: none;
+    }
+    .about-me3{
+        padding: 0;
+        gap: 0;
+    }
+    .services{
+        width: 85%;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    .service11{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services2{
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .project{
+        width: 85%;
+        height: auto;
+        padding: 20px 0;
+    }
+    .pro{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .project1{
+        width:70%;
+    }
+    .form{
+        width: 80%;
+    }
+    .form1 input{
+        width: 100%;
+    }
+    .form1 input[type="message"]{
+        width: 100%;
+
 }
